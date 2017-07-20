@@ -1,0 +1,10 @@
+'delete ml_engine_project entity':
+  title: Delete entity content
+'add ml_engine_project entity':
+  title: Add entity content
+'view ml_engine_project entity':
+  title: View entity content
+'edit ml_engine_project entity':
+  title: Edit entity content
+'administer ml_engine_project entity':
+  title: Administer settings

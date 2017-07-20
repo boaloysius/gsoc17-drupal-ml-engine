@@ -1,0 +1,11 @@
+name: ML Engine
+type: module
+description: ML Engine.
+package: ML Engine
+
+
+# Information added by Drupal.org packaging script on 2017-07-15
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'ml_engine'
+datestamp: 1500142145

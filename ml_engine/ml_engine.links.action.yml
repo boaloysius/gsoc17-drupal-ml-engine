@@ -1,0 +1,11 @@
+# All action links for this module
+
+content_entity_example.contact_add:
+  # Which route will be called by the link
+  route_name: ml_engine_project.add
+  title: 'Add Project'
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+    - entity.ml_engine_project.collection
+    - entity.ml_engine_project.canonical

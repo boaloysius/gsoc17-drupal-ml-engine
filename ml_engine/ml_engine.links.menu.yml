@@ -1,0 +1,12 @@
+entity.ml_engine_project.collection:
+  title: 'ML Engine Project Listing'
+  route_name: entity.ml_engine_project.collection
+  description: 'List Projects'
+  parent: system.admin_structure
+  weight: 10
+ml_engine_project.admin.structure.settings:
+  title: ML Engine Settings
+  description: 'Configure ML Engine Project'
+  route_name:  ml_engine.project_settings
+  parent: system.admin_structure
+  weight: 9

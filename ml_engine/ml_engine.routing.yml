@@ -1,0 +1,54 @@
+entity.ml_engine_project.canonical:
+  path: '/ml_engine/{ml_engine_project}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the contact entity
+    _entity_view: 'ml_engine_project'
+    _title: 'ML Engine Project'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'ml_engine_project.view'
+
+entity.ml_engine_project.collection:
+  path: '/ml_engine'
+  defaults:
+  # Calls the list controller, defined in the annotation of the contact entity.
+    _entity_list: 'ml_engine_project'
+    _title: 'ML Engine Project List'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'view ml_engine_project entity'
+
+ml_engine_project.add:
+  path: '/ml_engine/add'
+  defaults:
+  # Calls the form.add controller, defined in the contact entity.
+    _entity_form: ml_engine_project.add
+    _title: 'Add Project'
+  requirements:
+    _entity_create_access: 'ml_engine_project'
+
+entity.ml_engine_project.edit_form:
+  path: '/ml_engine/{ml_engine_project}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the contact entity.
+    _entity_form: ml_engine_project.edit
+    _title: 'Edit Project'
+  requirements:
+    _entity_access: 'ml_engine_project.edit'
+
+entity.ml_engine_project.delete_form:
+  path: '/ml_engine/{ml_engine_project}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the contact entity.
+    _entity_form: ml_engine_project.delete
+    _title: 'Delete Project'
+  requirements:
+    _entity_access: 'ml_engine_project.delete'
+
+ml_engine.project_settings:
+  path: '/ml_engine/credentials'
+  defaults:
+    _form: '\Drupal\ml_engine\Form\ProjectSettingsForm'
+    _title: 'ML Engine Credetial Settings'
+  requirements:
+    _permission: 'administer ml_engine_project entity'

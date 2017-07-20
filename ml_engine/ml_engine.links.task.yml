@@ -1,0 +1,22 @@
+# Define the 'local' links for the module
+
+ml_engine_project.settings_tab:
+  route_name: ml_engine.project_settings
+  title: Settings
+  base_route: ml_engine.project
+
+contact.view:
+  route_name: entity.ml_engine_project.canonical
+  base_route: entity.ml_engine_project.canonical
+  title: View
+
+contact.page_edit:
+  route_name: entity.ml_engine_project.edit_form
+  base_route: entity.ml_engine_project.canonical
+  title: Edit
+
+contact.delete_confirm:
+  route_name:  entity.ml_engine_project.delete_form
+  base_route:  entity.ml_engine_project.canonical
+  title: Delete
+  weight: 10
